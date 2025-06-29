@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Gallery</title>
+  <style>
+    body {
+      background: #111;
+      color: #eee;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: system-ui, sans-serif;
+      min-height: 100vh;
+    }
+    main {
+      width: 100vw;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem 0;
+      box-sizing: border-box;
+    }
+    .video-container {
+      background: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    video {
+      max-width: 320px;
+      width: 100%;
+      background: #000;
+      outline: none;
+    }
+    @media (max-width: 700px) {
+      main {
+        flex-direction: column;
+        align-items: center;
+      }
+      .video-container {
+        width: 90vw;
+      }
+      video {
+        max-width: 100vw;
+      }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <div class="video-container">
+    <video controls src="/JumppadSystem.mp4"></video>
+  </div>
+  <div class="video-container">
+    <video controls src="/bandicam 2025-06-28 12-09-01-514.mp4"></video>
+  </div>
+  <div class="video-container">
+    <video controls src="/Second.mp4"></video>
+  </div>
+  <div class="video-container">
+    <video controls src="/First.mp4"></video>
+  </div>
+  <div class="video-container">
+    <video controls src="/LowTaperLava.mp4"></video>
+  </div>
+</main>
+</body>
+</html>
